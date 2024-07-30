@@ -1,0 +1,6 @@
+/build/
+/dist/
+/data/
+/.idea/
+/.versions/
+__pycache__/
