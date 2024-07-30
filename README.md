@@ -1,4 +1,7 @@
 # Have I-Net
+
+![](.\examples\preview.png)
+
 **Have I-Net** is a terminal-based application that allows
 you to monitor the ping latency of multiple servers in real-time.
 This tool helps in tracking the network performance and
