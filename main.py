@@ -1,4 +1,3 @@
-from environs import Env
 from textual import on, work
 from textual.app import App
 from textual.containers import Container, VerticalScroll, Center
@@ -10,12 +9,10 @@ from textual.screen import Screen
 from textual.widgets import Label, Footer, Button, Rule, Input
 
 from src.db.hosts import HostsDb
+from src.env import ENV
 from src.icmp_utils import Ping, PingResult
 from src.widgets.ping_interval_display import PingIntervalDisplay
 from src.widgets.pinger import Pinger
-
-ENV = Env()
-ENV.read_env("./.env")
 
 
 class HostsPingScreen(Screen):

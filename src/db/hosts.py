@@ -1,10 +1,8 @@
 from pathlib import Path
 
 from aiotinydb import AIOTinyDB
-from environs import Env
 
-ENV = Env()
-ENV.read_env("./.env")
+from src.env import ENV
 
 
 class HostsDb:

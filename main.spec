@@ -6,7 +6,7 @@ a = Analysis(
     pathex=[],
     binaries=[],
     datas=[
-        ("./.env", "."),
+        ("./app.env", "."),
         ("./styles/index.tcss", "styles")
     ],
     hiddenimports=[],
