@@ -1,3 +1,4 @@
+import sys
 from pathlib import Path
 
 from aiotinydb import AIOTinyDB
@@ -6,7 +7,7 @@ from src.env import ENV
 
 
 class HostsDb:
-    PATH = ENV.path("HOSTS_PATH")
+    PATH = Path(sys.argv[0]).parent.joinpath(ENV.path("HOSTS_PATH"))
 
     _instance = None
 
