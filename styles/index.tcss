@@ -268,5 +268,4 @@ PingIntervalDisplay {
     width: auto;
     height: auto;
     color: $orange;
-    padding: 0 1;
 }
