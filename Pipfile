@@ -11,7 +11,7 @@ environs = "*"
 
 [dev-packages]
 textual-dev = "*"
-pyinstaller = "*"
+pyinstaller = {file = "https://github.com/pyinstaller/pyinstaller/archive/790d43f31cde74f3544ecf59f4c4d2035b2d5317.zip"}
 
 [requires]
 python_version = "3.11"

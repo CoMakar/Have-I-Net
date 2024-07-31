@@ -23,26 +23,43 @@ detecting potential connectivity issues.
 
 ## How to Run \ Build from source
 ```shell
+# ~ RUN ~
+
 # enter the shell
 $ pipenv shell
 
-# RUN
-# ----------------------------
 # install dependencies
 $ pipenv install
 
 # run
 $ python main.py
-# ----------------------------
 
-# BUILD
-# ----------------------------
+# ~ BUILD ~
+
+# ! WARNING !
+# - Due to a pyinstaller bug related to the Windows Terminal
+#   At the moment dev build of the pyinstaller is used
+#   So you need to set an environment variable to compile the
+#   Pyinstaller bootloader
+
+# enter the shell
+$ pipenv shell
+
+# set pyinstaller environment variable
+# for powershell
+$ $Env:PYINSTALLER_COMPILE_BOOTLOADER = 1
+# |
+# for CMD
+$ set PYINSTALLER_COMPILE_BOOTLOADER=1
+
 # install dev dependencies
 $ pipenv install --dev
 
 # build
+# using pyinstaller
 $ pyinstaller main.spec
-# or
+# |
+# using make
 $ make build
-# ----------------------------
+
 ```
