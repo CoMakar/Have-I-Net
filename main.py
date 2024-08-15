@@ -17,10 +17,10 @@ from src.widgets.pinger import Pinger
 
 class HostsPingScreen(Screen):
     BINDINGS = [
-        ("a", "app.push_screen('add_host')", " - Add host"),
-        ("c", "toggle_compact()", " - Toggle compact mode"),
-        ("e", "handle_interval_change(1)", " - Interval ↑"),
-        ("q", "handle_interval_change(-1)", " - Interval ↓")
+        ("a, ф", "app.push_screen('add_host')", " - Add host"),
+        ("c, с", "toggle_compact()", " - Toggle compact mode"),
+        ("e, у", "handle_interval_change(1)", " - Interval ↑"),
+        ("q, й", "handle_interval_change(-1)", " - Interval ↓")
     ]
 
     MIN_INTERVAL = ENV.int("MIN_INTERVAL")
