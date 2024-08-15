@@ -218,7 +218,7 @@ Pinger.compact {
     max-width: 1fr;
 
     #data-layout {
-        border: none;
+        border: none !important;
     }
 
     #delete {
@@ -257,7 +257,7 @@ Pinger.resolved {
             color: $red;
 
             #data-layout {
-                border: round $red 20%;
+                border: $red 20%;
             }
         }
         
